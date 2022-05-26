@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    
+}
+.purple{
+    background-color:#A64AC9;
+}
+.red{
+    background-color: #ec2112;
+}
+.white{
+    background-color: white;
+}
+.blue{
+    background-color: rgb(0, 119, 255);
+}
+.yellow{
+    background-color: #FFFF00;
+}
+/* 
+#head-element{
+    height:15vh;
+    display:flex;
+    flex-direction: row;
+    
+}
+#logo img{
+    height: 15vh;
+}
+#head-title {
+    font-family:sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+#head-title h2{
+    padding-left: 1em;
+    padding-top: 0.2em;
+}
+#job h4{
+    margin: 2.5em 2.5em;
+    background-color: black;
+    color: yellow;
+} */
+
+/*navbar*/
+.navbar{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+#nav-elem ul li a{
+    color: yellow;
+}
+#nav-elem ul li a:hover{
+    color: #0d6efd;
+}
+
+.nav-item a:hover{
+    border-radius: 10px;
+    background-color: yellow;
+}
+/* HOME */
+#home{
+    background: url('../static/bg4.jpg')no-repeat center center/cover fixed;
+    height: 90vh;
+    position: relative;
+    z-index: -2;
+    padding-top: 2rem;
+}
+#home-card{
+    z-index: 10;     
+    position: relative;
+    
+}
+#home-notes{   
+    text-shadow: 2px 2px 2px white;
+    background-color: yellow;
+    opacity: 0.8;
+}
+#home-notes h5{
+    font-size: 3rem;
+    text-align: center; 
+}
+
+#title-card{
+    background-color: yellow;
+    color: #0d6efd;
+    font-size: 3rem;
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Azeret Mono', monospace;
+}
+@media only screen and (max-width: 600px) {
+    #title-card{
+        font-size: 1.5rem;
+    }   
+}
+/* Go to the top */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 12;
+  }
+/* ABOUT */
+#about{
+    position: relative;
+    background: transparent;
+    
+}
+#about-head{
+    width: 60vw;
+    z-index: 1;
+}
+#about-card{
+    width: 65vw;
+    z-index:10;
+    text-align: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+.col img{
+    height:5rem;
+    width: 5rem;
+    border-radius: 50px;
+}
+#vision{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+}
+#vision img{
+    width: 20rem;
+}
+#mission{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+}
+#mission img{
+    width: 20rem;
+}
+/* ACADEMICS */
+#academics{
+    position: relative;
+    z-index:1;
+}
+#academics-card{
+    width:70vw;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#academics-card h2{
+    text-align: center;
+}
+
+#academics-card1, #academics-card2{
+    text-align: left;
+    color: black
+}
+#academics-card1 h3{
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    background-color: #0d6efd;
+    padding: .5rem;
+    transform: skewX(-20deg);
+}
+#academics-card2 h2{
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    background-color: #0d6efd;
+    padding: .5rem;
+    transform: skewX(-20deg);
+}
+#academics-card1 ul li{
+    font-size: 1.2rem;
+}
+.edulist{
+    list-style: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+/* testimonials */
+#testimonials{
+    font-style: italic
+}
+#testimonials img{
+    height:120px;
+    width: 100px
+}
+#testimonials-card{
+    width: 70vw;
+}
+#testimonials-card .row{
+    border: 1px solid yellow;
+    border-radius: 5px
+}
+/* CONTACT */
+#contact{
+    position: relative;
+    background-color: black;
+}
+#contact .card-body {
+    color: white;
+}
+
+.tilt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.tilt svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;
+    transform: rotateY(180deg);
+}
+
+.tilt .shape-fill {
+    fill: #FFFF00;
+    z-index: -2;
+}
+
+.tilt2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -1;
+}
+
+.tilt2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;
+    transform: rotateY(180deg);
+}
+
+.tilt2 .shape-fill {
+    fill: #FFFF00;
+}
+
+.tilt3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.tilt3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;
+    transform: rotateY(180deg);
+}
+
+.tilt3 .shape-fill {
+    fill:white;
+    z-index: -2;
+}
+
+
+/* *******JOBS AND BLOG***** */
+
+
+/* **********ADMIN********* */

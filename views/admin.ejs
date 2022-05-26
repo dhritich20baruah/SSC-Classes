@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<style>
+    h3{
+    text-align: center;
+    text-decoration: underline;
+    color: yellow;
+}
+</style>
+    <body>
+        <%- include('./partials/nav2.ejs') %>
+
+            <div class="container overflow-auto" style="height:78vh">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                JOBS
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <section id="job-form" class="my-5 bg-primary">
+                                    <h3>JOBS</h3>
+                                    <div class="container my-5">
+                                        <form action="/job-update" method="post">
+                                            <div class="mb-3">
+                                                <label for="jobTitle" class="form-label">Job Title</label>
+                                                <input type="text" class="form-control" id="jobTitle" name="jobTitle"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="jobSnipet" class="form-label">Job Snipet</label>
+                                                <input type="text" class="form-control" id="jobSnipet" name="jobSnipet"
+                                                    required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="jobDetails">Job Details</label>
+                                                <textarea class="form-control" id="jobDetails" rows="3"
+                                                    name='jobDetails'></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="jobLink">Notification link</label>
+                                                <input type="text" class="form-control" id="jobLink" name="jobLink"
+                                                    required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="jobApply">Apply Link</label>
+                                                <input type="text" class="form-control" id="jobApply" name="jobApply"
+                                                    required>
+                                            </div>
+                                            <button type="submit"
+                                                class="btn btn-outline-light my-3 mx-3">Submit</button>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- BLOGS -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                BLOGS
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <section id="blog-post" class="my-5 bg-warning">
+                                    <h3>BLOGS</h3>
+                                    <div class="container">
+                                        <form action="/blog-update" method="post">
+                                            <div class="mb-3">
+                                                <label for="blogTitle" class="form-label">Blog Title</label>
+                                                <input type="text" class="form-control" id="blogTitle" name="blogTitle"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="blogSnippet" class="form-label">Blog Snippet</label>
+                                                <input type="text" class="form-control" id="blogSnippet"
+                                                    name="blogSnippet" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="blogDetails">Blog Details</label>
+                                                <textarea class="form-control textarea1" id="blogDetails" rows="8"
+                                                    name='blogDetails'></textarea>
+                                            </div>
+                                            <input type="submit"
+                                                class="button"></input>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- STUDENT REGISTRATION -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                REGISTER STUDENTS
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <section id="register" class="my-5 bg-primary">
+                                    <div class="container">
+                                        <h3>Student Regitration</h3>
+                                        <form action="/register" method="post" enctype="multipart/form-data">
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Name of the Student</label>
+                                                <input type="text" class="form-control" id="name" name="name" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="studentPhone" class="form-label">Mobile Number</label>
+                                                <input type="phone" class="form-control" id="studentPhone"
+                                                    name="studentPhone" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="address" class="form-label">Address</label>
+                                                <input type="text" class="form-control" id="address" name="address"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="parent" class="form-label">Parent's Name</label>
+                                                <input type="text" class="form-control" id="parent" name="parent"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="parentPhone" class="form-label">Parent's Mobile
+                                                    Number</label>
+                                                <input type="text" class="form-control" id="parentPhone"
+                                                    name="parentPhone" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="course" class="form-label">Course Enrolled</label>
+                                                <input type="text" class="form-control" id="course" name="course"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="batch" class="form-label">Batch</label>
+                                                <input type="text" class="form-control" id="batch" name="batch"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="photo" class="form-label">Student's Photograph</label>
+                                                <input class='form-control form-control-lg' type="file" name="photo"
+                                                    id='photo' multiple>
+                                            </div>
+                                            <button type="submit"
+                                                class="btn btn-outline-light my-3 mx-3">Submit</button>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <%- include('./partials/footer.ejs') %>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous"></script>
+            <script src="/static/ckeditor.js"></script>
+            <script>
+                CKEDITOR.replace('blogDetails')
+            </script>
+             
+    </body>
+
+</html>

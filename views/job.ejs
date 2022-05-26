@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <section class="container jobs overflow-auto" style="height: 78vh">
+        <div id="job-post" class=' bg-primary'>
+            <div class="card mb-3 bg-primary" style="max-width: 85vw">
+                <div class="row g-0">
+                    <% if(details.length> 0){ %>
+                        <% for (let i =details.length-1; i>=0; i--){ %>
+                            <ul class="list-group-item list-group-item">
+                                <li class="list-group-item">
+                                    <%= details[i].jobTitle %>
+                                </li>
+                                <li class="list-group-item">
+                                    <%= details[i].jobSnipet %>
+                                </li>
+                                <li class="list-group-item">
+                                    <%= details[i].jobDetails %>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <a href="<%= details[i].jobLink %>"><button
+                                                class="btn btn-primary btn-sm">Detailed
+                                                Notification</button></a>
+                                        <a href="<%= details[i].jobApply %>"><button
+                                                class="btn btn-primary btn-sm">Apply
+                                                Online</button></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <% }%>
+                                <% } %>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include('./partials/footer.ejs') %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

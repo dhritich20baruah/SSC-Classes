@@ -1,0 +1,29 @@
+<html>
+<%- include('./partials/head.ejs') %>
+<style>
+    body{
+        color: black
+    }
+    img{
+        max-width: 90vw; 
+        height: auto;
+    }
+</style>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="detailsContent container">
+        <h2 class="fs-2"><%= blog.blogTitle %></h2>
+        <p class="text-danger"><%= blog.createdAt.toLocaleDateString() %></p>
+        <div class="content">
+            <p id="desc"></p>
+        </div>
+        <input type="text" id="htmldetails" value="<%= blog.blogDetails %>" style="display: none">
+    </div>
+    <%- include('./partials/footer.ejs')%>
+</body>
+<script>
+    let desc = document.getElementById("desc");
+    let htmldetails = document.getElementById('htmldetails').value
+    desc.innerHTML = htmldetails
+</script>
+</html>

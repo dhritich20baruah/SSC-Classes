@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav-elem">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+          <img src="../static/logo.jpeg" alt="logo" width="80" height="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link"  href="/" >Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/job.ejs">Career</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/blog.ejs">Blog</a>
+              </li>
+          </ul>
+          <!-- Button trigger modal -->
+          <form class="d-flex">
+              <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                  Login
+              </button>
+          </form>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true" style="color: black">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <form method="POST" action="/login">
+                              <div class="mb-3">
+                                  <label for="email" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="email" name="email"
+                                      aria-describedby="emailHelp">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="password" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="password" name='password'>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>

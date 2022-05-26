@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: rgb(39, 134, 212);
+    }
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+.purple{
+    background-color:#A64AC9;
+}
+.beige{
+    background-color: #FFB48F;
+}
+.offwhite{
+    background-color: #F5E6CC;
+}
+.blue{
+    background-color: #17E9E0;
+}
+/*navbar*/
+.navbar{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 10vw;
+    position: fixed;
+    margin-left: 0;
+    background-color: orange;
+    align-items: center;
+    border-right: 3px solid white;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+#navbar ul li{
+    font-size: 1.15rem;
+}
+#navbar ul li a{
+    display:block;
+    padding: 20px 0px;
+    text-align: center;
+
+}
+#navbar ul li a:hover{
+    border-bottom:2px solid yellow;
+    color:yellow;
+}
+#logo img{
+    margin: 10px auto;
+}
+#logo h3{
+    text-align: center;
+    color: white
+}
+
+/*Home*/
+#home{
+    height:100vh;
+    display: flex;
+    color:white;
+    font-size: 8vh;
+    flex-direction: column;
+    font-family: 'Indie Flower', cursive;
+}
+.home-container{
+    display: block;
+    margin: auto;
+    width: 70vw;
+}
+.home-container h1{
+    animation-name: color;
+    animation-duration: 4.5s;  
+    animation-iteration-count: infinite;  
+}
+@keyframes color{
+    0%{
+        color:yellow;
+    }
+    33%{
+        color:orange;
+    }
+    66%{
+        color:yellow;
+    }
+    100%{
+        color:white;
+    }
+}
+
+/*About*/
+#about{
+    height: 100vh;
+    font-family: 'Varela Round', sans-serif;
+    margin-left: 15vw;
+}
+#about h1{
+    text-align: center;
+    font-size:30px;
+    text-decoration: underline;
+    color: white;
+}
+#aboutin{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#statements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#statements img{
+    width: 30vw;
+    border:2px solid white;
+    border-radius: 10px;
+}
+#faculty{
+    align-items: center;
+    margin: 2em 2em;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding:0 2em;
+    background-color:orange;
+    color: white;
+    width:30vw;
+}
+#faculty h2{
+    text-align: center;
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    height: 15vh;
+}
+.degree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+#faculty img{
+    height: 100%;
+    border-radius: 50px;
+}
+/*Subjects*/
+#academics{
+    font-family: 'Varela Round', sans-serif;
+    margin: 5% 0px 3% 0px;
+}
+#academics h1{
+    text-align: center;
+    font-size:30px;
+    text-decoration: underline;
+    color: white;
+}
+#academics-info{
+    display: flex;
+    margin:50px auto;
+    
+}
+
+#quote{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    font-family: 'Varela Round', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+#quote img{
+    margin:0px auto;
+    width: 60%;
+}
+#subjectlist{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.six{
+    display: flex;
+    margin:20px;
+    border-bottom: 2px solid white;
+}
+#subjectlist h3{
+    text-align: center;
+}
+#subjectlist img{
+    width:10vw;
+    
+}
+.subjects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+}
+
+/*Contact*/
+#contact{
+    background:orange;
+    margin:5% 0;
+    margin-bottom: 0;
+    font-family: 'Varela Round', sans-serif;
+    border-top: 3px solid white;
+    width: 100vw;
+}
+#contact h1{
+    text-align: center;
+    font-size:30px;
+    text-decoration: underline;
+    color: white;
+}
+#contact-info{
+    display:flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#contactus{
+    margin:auto;
+    color: white;
+    border-right: 2px solid white;
+}
+#contactus h2{
+    text-decoration: underline;
+}
+#contactus h3{
+    margin:0.5em;
+}
+#map{
+    color:white;
+    margin:auto;
+    justify-content: center;
+}
+#map img{
+    width:20vw;
+}
+#map img:hover{
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+    background-color: black;
+    color:white;
+    width: 100vw;
+    height: 30px;
+    font-size: 12px;
+}
