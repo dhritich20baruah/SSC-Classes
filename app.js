@@ -266,5 +266,5 @@ app.get('/deletequery/:id', (req, res) => {
 })
 
 
-app.listen(PORT, () => console.log(`Server started on ${PORT}`));
+app.listen(3000, () => console.log(`Server started on ${PORT}`));
 
