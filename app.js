@@ -6,6 +6,8 @@ const ejs = require('ejs');
 const methodOverride = require('method-override');
 const multer = require('multer');
 const bodyParser = require('body-parser');
+const PORT = process.env.port || 8020;
+
 
 //Mongoose
 const db = require('./config/keys').MongoURI;
@@ -264,5 +266,5 @@ app.get('/deletequery/:id', (req, res) => {
 })
 
 
-app.listen(5000, () => console.log(`Server started on 5000`));
+app.listen(PORT, () => console.log(`Server started on ${PORT}`));
 
