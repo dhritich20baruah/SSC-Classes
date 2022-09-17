@@ -22,10 +22,10 @@ const Jobs = require('./models/job');
 
 
 //EXPRESS
-app.use(express.json())
+app.use(express.json());
 app.use('/static', express.static('static'));//For serving static files
 app.use(express.urlencoded({ extended: true }));
-app.use(methodOverride('_method'))
+app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 //Set static folder
