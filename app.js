@@ -6,7 +6,7 @@ const ejs = require('ejs');
 const methodOverride = require('method-override');
 const multer = require('multer');
 const bodyParser = require('body-parser');
-const PORT = process.env.port || 8020;
+const PORT = 8020;
 
 
 //Mongoose
