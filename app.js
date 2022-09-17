@@ -12,7 +12,7 @@ const PORT = process.env.port || 8020;
 //Mongoose
 const db = require('./config/keys').MongoURI;
 
-mongoose.connect(db, { useNewUrlParser: true,useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true,useUnifiedTopology: true })
     .then(() => console.log('DB Connected'))
     .catch(err => console.log(err));
 
