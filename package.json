@@ -4,7 +4,7 @@
   "description": "S.S.Classes",
   "main": "app.js",
   "scripts": {
-    "start": "node index",
+    "start": "node app",
     "dev": "nodemon index"
   },
   "author": "Dhritiman",
